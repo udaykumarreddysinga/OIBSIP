@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body and Container */
+body {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* To-Do App Styling */
+.todo-app {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+.todo-app h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* Input and Button Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #4a90e2;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    background: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background: #357abd;
+}
+
+/* Task List Styling */
+#list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list-container li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#list-container li:hover {
+    transform: scale(1.02);
+    background: #f0f0f0;
+}
+
+/* Checked Task */
+#list-container li.checked {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Delete Button */
+#list-container li span {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#list-container li span:hover {
+    color: #c0392b;
+}

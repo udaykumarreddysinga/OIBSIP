@@ -1,0 +1,93 @@
+/* Overall body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Main container styling */
+#main {
+    background-color: lightsteelblue;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 1000%;
+    max-width: 10000px;
+    text-align: center;
+}
+
+#title {
+    font-size: 5vh;
+    color: black;
+    margin-bottom: 10px;
+}
+#img {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Tribute Data Section */
+#tribute-data {
+    background-color: #ecf8e1; /* Light greenish background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 0px;
+    margin-top:10px;
+}
+
+h1.title-vk {
+    font-size: 2.5em;
+    color:brown; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #34495e; 
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+p br {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 0vh;
+    }
+
+    img {
+        width: 200%;
+    }
+
+    #tribute-data {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
